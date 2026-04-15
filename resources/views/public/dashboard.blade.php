@@ -8,9 +8,12 @@
             <img src="{{ asset('images/heroes/hero-background.png') }}"
                  alt="EQUITY UP Hero Background"
                  class="img-fluid w-100 h-100 object-cover object-center">
+                {{-- Logo kanan atas: ganti file dengan logo pilihan Anda di public/images/logo.png --}}
+                <div class="position-absolute top-0 end-0 m-4 z-3 d-flex align-items-center gap-2">
+                    <img src="{{ asset('images/logo.png') }}" alt="Equity Logo" class="rounded-circle border border-white" style="width:3rem; height:3rem; object-fit:cover; background:#ffffff;">
+                    <span class="text-white fw-bold">EQUITY UP</span>
+                </div>
             <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-dark opacity-50"></div>
-            <div class="position-absolute bottom-0 start-0 end-0" style="height: 10rem; background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(248,250,252,1) 100%);"></div>
-
             <div class="position-absolute bottom-3 start-50 translate-middle-x z-2 text-center text-white">
                 <div class="border border-white border-2 rounded-pill d-inline-flex align-items-center justify-content-center" style="width: 2rem; height: 3rem;">
                     <div class="bg-white rounded-pill" style="width: 0.25rem; height: 0.75rem;"></div>
